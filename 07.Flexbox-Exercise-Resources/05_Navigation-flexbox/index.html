@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Navigation - Flexbox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 16px/1.5 Verdana, sans-serif
+        }
+
+        
+        h2 {
+            font-family: Georgia, serif;
+            padding-bottom: 0.5em;
+        }
+
+        body {
+            padding: 4em;
+        }
+
+        header {
+            border-bottom: 2px solid black;
+            display: flex;
+            padding-bottom: 1em;
+            justify-content: space-between;
+        }
+
+        main {
+            margin-top: 2em;
+
+        }
+
+        p {
+            padding-bottom: 1.5em;
+        }
+
+        /* nav {
+            margin-left: auto;
+        } */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;            
+            display: flex;
+            gap: 1em;
+            margin: 0;    /* Изчистете подразбиращия се маргин на ul */
+            padding: 0; /* Изчистете подразбиращия се padding на ul */
+            align-self: flex-end;  /* Поставете ul в долния край */
+        }
+
+        nav ul li {
+            display: block;
+        }
+
+        nav a {
+            color: rgba(0, 153, 0);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SITE TITLE</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Heading Level 1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque totam voluptatum consectetur aspernatur
+            impedit eum, dolor numquam labore dolorem quis eligendi quam veritatis sint saepe. Error ratione veniam
+            repellat nulla?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magnam at assumenda, in laboriosam debitis!
+            Impedit exercitationem ex, voluptate alias obcaecati voluptatem vitae quis, doloribus doloremque repudiandae
+            culpa modi cumque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid excepturi dolore illum iusto dolor repellat
+            accusantium atque error, labore sint recusandae nesciunt beatae magni reiciendis debitis veritatis eveniet,
+            quidem ex!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eius cupiditate architecto culpa facilis a
+            ullam excepturi doloribus necessitatibus, repudiandae vel alias eveniet saepe et, rerum praesentium voluptas
+            numquam. Perspiciatis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus blanditiis tempore, modi nihil vel
+            aspernatur iusto at iure quasi, laborum, libero sunt voluptatum in distinctio facilis dolor mollitia beatae
+            veniam?</p>
+    </main>
+
+</body>
+
+</html>

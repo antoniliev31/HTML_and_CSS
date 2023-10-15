@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. ABC Game</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 20px/1.5 Helvetica, sans-serif;
+        }
+
+        body {
+            padding: 2em;
+        }
+
+        .container {
+            display: flex;
+            max-width: 30vh;
+            height: 24rem;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 0.3em;
+        }
+
+        span {
+            flex-grow: 0;
+            padding: 0.5em;
+            border: 1px solid #000;
+            text-align: center;
+            border-radius: 0.3em;
+        }
+
+        span:nth-child(11) {order: 1; background-color: rgb(27, 24, 25); color: crimson;}
+        span:nth-child(2) {order: 2; background-color: blueviolet;}
+        span:nth-child(12) {order: 3; background-color: chartreuse;}
+        span:nth-child(4) {order: 4; background-color: chocolate;}
+        span:nth-child(8) {order: 5; background-color: rgb(172, 102, 12);}
+        span:nth-child(9) {order: 6; background-color: rgb(174, 101, 243);}
+        span:nth-child(6) {order: 7; background-color: rgb(226, 32, 123);}
+        span:nth-child(5) {order: 8; background-color: rgb(12, 138, 68);}
+        span:nth-child(1) {order: 9; background-color: rgb(233, 132, 179);}
+        span:nth-child(3) {order: 10; background-color: rgb(65, 223, 118);}
+        span:nth-child(7) {order: 11; background-color: rgb(63, 100, 223);}
+        span:nth-child(10) {order: 12; background-color: rgb(32, 226, 135);}      
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <span>H</span>
+        <span>e</span>
+        <span>T</span>
+        <span>a</span>
+        <span>c</span>
+        <span>i</span>
+        <span>M</span>
+        <span>n</span>
+        <span>t</span>
+        <span>L</span>
+        <span>S</span>
+        <span>m</span>
+
+    </div>
+</body>
+
+</html>

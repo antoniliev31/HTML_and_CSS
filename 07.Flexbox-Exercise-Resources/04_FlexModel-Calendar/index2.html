@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Calendar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 16px/1.5 Verdana, sans-serif;
+        }
+
+        body {
+            padding: 2em;
+        }
+
+        .container {
+            display: flex;
+            width: 80vw;
+            flex-direction: row;
+            /* Подрежда елементите вертикално в колоните */
+            align-items: center;
+            /* Центрира вертикално елементите в контейнера */
+            background-color: beige;
+        }
+
+        .left {
+            
+            background-color: aqua;
+            width: 60vw;
+            flex-grow: 1;
+        }
+
+        .right {
+            
+            background-color: blueviolet;
+            width: 20vw;
+            display: grid;   
+            flex-grow: 1;         
+        }
+
+        .left-top-header,
+        .left-top-daysOfWeek {          
+            display: grid;           
+        }
+
+        span {
+            border: 1px solid black;
+            padding: 0.5em;
+            text-align: center;
+            flex-grow: 1;            
+            /* да се разпънат на цялото пространство */
+            padding-bottom: 2em;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="left">            
+            <div class="left-top-header">
+                <span>left-top-header</span>
+            </div>
+            <div class="left-top-daysOfWeek">
+                <span>left-top-daysOfWeek</span>
+            </div>
+        </div>
+
+        <div class="right">
+            <span>Right</span>
+        </div>
+
+    </div>
+</body>
+
+</html>

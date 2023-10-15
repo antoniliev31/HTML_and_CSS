@@ -1,0 +1,41 @@
+.top-bar {
+    display: flex;
+    /*width: 100%;  Да земе цялото място и .site-header да падне на нов ред */
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    background-color: #D01919;
+    color: white;
+}
+
+.top-bar p {
+    padding: 0;
+}
+
+
+.socials {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.socials li, 
+.socials a {
+    display: block;
+}
+
+.socials li {
+    padding: 0 0.5em;
+}
+
+.socials a {
+    color: #FFF;
+}
+
+.site-header {
+    
+}
+
+.site-header .site-title {
+    display: none;
+}
+

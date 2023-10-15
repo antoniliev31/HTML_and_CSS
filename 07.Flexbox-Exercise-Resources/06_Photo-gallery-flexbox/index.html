@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Photo Gallery - Flexbox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 16px/1.5 Verdana, sans-serif
+        }
+
+        body {
+            display: flex;
+            justify-content: center; /*Да ми центрира съдържанието */
+            background: #EEE;
+            padding: 3em;
+        }
+
+        .gallery {
+            display: flex;
+            max-width: 65em; 
+            /*Максимален размер на картинките 
+            От тук ще се определи и колко колони най-много ще се покажат*/
+        }
+
+        .gallery ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3em; /*Задава разстояние между елементите, Слага се на контайнера който ги държи */
+        }
+
+        .gallery li {
+            flex: 1 1 200px; /*Ще може да порасте, Ще може да се свие, Кога на 200px */
+            display: flex;
+            list-style: none;
+            align-items: center; /* Центрира по хоризонтала, иначе ги разпъва от горе до долу */
+            background-color: white;
+            border: 6px solid black;
+            padding: 2em 1em;
+            box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.4),
+                        0 0 0.3em 0.1em rgba(0, 0, 0, 0.3) inset;
+        }
+
+        .gallery img {
+            display: block; /*премахва разтоянието под картинките */
+            width: 100%;
+            height: auto;
+            order: 1000;
+        }
+
+        /* .gallery::before,
+        .gallery::after {
+            display: block;
+            content: '';
+            flex: 1 1 200px;
+        } */
+        
+        
+    </style>
+</head>
+
+<body>
+    <section class="gallery">
+        <ul>
+            <li><img src="images/picture1.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture2.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture3.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture4.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture5.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture6.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture7.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture8.jpg" alt="" srcset=""></li>
+            <li><img src="images/picture9.jpg" alt="" srcset=""></li>
+        </ul>
+    </section>
+</body>
+
+</html>

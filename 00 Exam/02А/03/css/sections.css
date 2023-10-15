@@ -1,0 +1,239 @@
+.section-banner {
+    width: 100%;
+    background-color: #ADE2DF;
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.section-banner ul {
+    display: flex;
+    justify-content: center;
+    /* Центриране по хоризонтала */
+    align-items: center;
+    /* Центриране по вертикала */
+}
+
+.section-banner ul a {
+    display: block;
+    border-radius: 3px;
+    background-color: black;
+    padding: 12px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.section-banner li {
+    flex: 0 0 auto;
+    display: block;
+}
+
+.section-banner h2 {
+    font-size: 35px;
+    
+}
+
+/* ------------------------ */
+
+.section-statistic {
+    min-height: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.columns {
+    display: flex;
+    padding-left: 5em;
+    padding-right: 5em;
+    min-height: 100px;
+}
+
+.columns li {
+    display: grid;
+    text-align: center;        
+}
+
+
+.columns .title {
+    display: flex;
+    font-size: 24px;        
+    font-weight: 600; 
+    font
+    color: brown;  
+    align-items: baseline;
+    justify-content: center;     
+}
+
+
+
+.columns li:nth-child(2) {
+    border-left: 0.5px solid #DBDBDB;
+    border-right: 0.5px solid #DBDBDB;    
+}
+
+/* ---------------------------------------- */
+
+.section-phone {
+    background-color: #ADE2DF;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+    /* Лявата част (снимка) заема 50% ширина */
+    display: flex;
+    /* За да можем да центрираме снимката */
+    justify-content: flex-end;
+    /* Подравнява снимката вдясно на контейнера */
+}
+
+.text-container {
+    flex: 1;
+    /* Дясната част (текст) заема 50% ширина */
+    padding-left: 5em;
+    padding-right: 5em;    
+}
+
+.text-container a {
+    color: black;
+}
+
+.image-container img {
+    max-width: 50%;
+    /* Автоматично мащабиране на снимката */
+    padding-left: 2em;
+    padding-right: 2em;
+    height: auto;
+    border: 1px dashed gray;
+    /* Добавяне на пунктиран бордер с ширина 2px и цвят #000 (черен) */
+}
+
+
+/* ------------------------------------ */
+
+.section-center {
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.section-center a {
+    background-color: #ADE2DF;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.section-center h3 {
+    padding: 1em;
+}
+
+
+/* -----------ПЕТТЕ СЕКЦИИ-------------- */
+
+.five-parts-section {
+    display: flex;        
+    border: 1px solid gray;
+    border-radius: 0.8em;
+    background-color: #ffffff;
+    padding-bottom: 4em;
+}
+
+.five-parts-section > :nth-child(-n+3) {
+    flex: 1;
+    background-color: white;
+}
+
+.text-only {
+    margin: 1.5em;    
+}
+
+.five-parts-section .text-area ul li{
+    font-size: 9px;
+    line-height: 2.2;
+}
+
+.part {
+    flex: 0 0 calc(20%);    
+    margin-bottom: 0px;
+}
+
+.part4-5 {
+    flex-basis: calc(40% - 20px);
+    /* Обединени части с 20px място между тях */
+    background-color: #ADE2DF;   
+}
+
+.part4-5 h3{
+    font-size: 12px;  
+    line-height: 1.5;
+}
+
+
+
+
+  
+  
+.text-area h5 {
+    text-align: center;
+}
+    
+.price {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid gray;
+}
+    
+.price p {
+    margin-left: 0.5em;    
+}
+    
+.part .text-area ul {
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+}
+    
+.part1 a, .part2 a, .part3 a {
+    display: flex;
+    font-size: 10px;    
+    text-decoration: none;
+    color: #000; 
+    justify-content: center; /* Хоризонтално центриране на текста */  
+    padding: 1em 1.8em;
+    background-color: #ADE2DF;
+    border-radius: 3px;
+    font-weight: 500;
+    align-items: flex-end;
+}
+
+.part4-5 a {
+    display: flex;
+    font-size: 10px;    
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    justify-content: center; /* Хоризонтално центриране на текста */  
+    padding: 1em 1.8em;
+    background-color: #000;
+    border-radius: 3px;
+    font-weight: 500;
+    align-items: flex-end;
+}
+    
+.five-parts-section ul {
+    list-style: none;
+    /* Премахване на стандартния маркер */
+    padding: 0;
+    /* Премахване на стандартния отстъп на списъка */
+    margin: 0;
+    
+}
+    
+.five-parts-section li::before {
+    content: "✓ ";
+    /* Добавете желания символ и интервал */
+}
+
+

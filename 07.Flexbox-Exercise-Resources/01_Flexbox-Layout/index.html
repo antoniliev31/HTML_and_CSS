@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Flexbox Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+
+        header, main, aside, footer {
+            padding: 2em;
+            background-color: #FFF;
+            border-radius: 0.4rem;
+            color: #000;
+            box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2); 
+            /* box-shadow: [horizontal-offset] [vertical-offset] [blur-radius] [spread-radius] [color, прозрачност 0.2 (20%)]; */
+        }
+
+        header, footer {
+            flex-basis: 100%;
+            min-height: 100px;
+        }
+
+        main {
+            flex: 8 1 40rem;
+            /* flex: 8 1 40rem; означава следното:
+            Елементът има висок приоритет при разширяването ((8)голям flex-grow).
+            Елементът има среден приоритет при свиването ((1)стандартно flex-shrink).
+            Началният размер на елемента е 40rem. */
+            min-height: 200px;
+        }
+
+        aside {
+            flex: 2 1 20rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Header</p>
+    </header>
+    <main>
+        <p>Main</p>
+    </main>
+    <aside>
+        <p>Aside</p>
+    </aside>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+
+header, article, section {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+    list-style-position: inside;
+}
+
+a {
+    color: blue;
+}
+
+.site {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;    
+    display: flex; /* Добавяме Flexbox стил за контейнера .site */
+}
+
+img {
+    max-width: 100vh;
+}
+
+.site-article {    
+    flex: 7; /* 70% ширина */
+    padding: 10px; /* Примерно разстояние между блоковете */
+}
+
+.article-header {
+    
+}
+
+.article-section {
+    
+}
+
+.article-footer {
+    
+}
+
+.sitebar {
+    
+    flex: 3; /* 30% ширина */
+    padding: 10px; /* Примерно разстояние между блоковете */
+}
